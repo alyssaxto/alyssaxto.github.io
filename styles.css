@@ -105,6 +105,7 @@
     transition: all 0.3s ease;
   }
   
+  
   @media screen and (max-width: 960px) {
     .navbar__container {
       display: flex;
@@ -134,8 +135,9 @@
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 99;
-      height: 80vh; /* Increase the height to 80vh or adjust as needed */
+      height: 40vh; /* Adjusted height as per your requirement */
       font-size: 1.6rem;
+      padding-bottom: 50px; /* Additional padding to the bottom */
     }
   
     #navbar__logo {
@@ -152,6 +154,7 @@
   
     .navbar__item {
       width: 100%;
+      padding: 8px 12px; /* Smaller padding between links */
     }
   
     .navbar__links {
@@ -197,7 +200,6 @@
       transform: translateY(-8px) rotate(-45deg);
     }
   }
-  
   .highlight {
     color: #ff4f4f; /* You can adjust the color value */
   }

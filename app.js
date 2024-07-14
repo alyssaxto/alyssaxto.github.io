@@ -12,35 +12,6 @@ const mobileMenu = () => {
 
 menu.addEventListener('click', mobileMenu);
 
-// Show active menu when scrolling
-const highlightMenu = () => {
-  const portfolioMenu = document.querySelector('#Portfolio-page');
-  const aboutMenu = document.querySelector('#about-page');
-  const projectsMenu = document.querySelector('#Projects-page');
-
-  const portfolioSection = document.querySelector('#Portfolio');
-  const aboutSection = document.querySelector('#about');
-  const projectsSection = document.querySelector('#Projects');
-
-  const scrollPos = window.scrollY;
-
-  // Remove 'highlight' class from all menu items
-  portfolioMenu.classList.remove('highlight');
-  aboutMenu.classList.remove('highlight');
-  projectsMenu.classList.remove('highlight');
-
-  // Check if the scroll position matches each section and highlight the corresponding menu item
-  if (scrollPos >= projectsSection.offsetTop) {
-    projectsMenu.classList.add('highlight');
-  } else if (scrollPos >= aboutSection.offsetTop) {
-    aboutMenu.classList.add('highlight');
-  } else if (scrollPos >= portfolioSection.offsetTop) {
-    portfolioMenu.classList.add('highlight');
-  }
-};
-
-window.addEventListener('scroll', highlightMenu);
-
 //  Close mobile Menu when clicking on a menu item
 const hideMobileMenu = () => {
   const menuBars = document.querySelector('.is-active');
