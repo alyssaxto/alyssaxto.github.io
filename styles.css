@@ -1277,3 +1277,12 @@ input[type="password"] {
 .purple-link:hover {
   text-decoration: underline; /* Underline on hover */
 }
+
+.green-link {
+  color: #0bc20b;
+  text-decoration: none; /* Remove default underline */
+}
+
+.green-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
