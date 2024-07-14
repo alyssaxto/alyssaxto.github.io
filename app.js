@@ -11,43 +11,47 @@ const mobileMenu = () => {
 };
 
 menu.addEventListener('click', mobileMenu);
+
 // Show active menu when scrolling
 const highlightMenu = () => {
-  const PortfolioMenu = document.querySelector('#Portfolio-page');
+  const portfolioMenu = document.querySelector('#Portfolio-page');
   const aboutMenu = document.querySelector('#about-page');
-  const ProjectsMenu = document.querySelector('#Projects-page');
-  
-  // Remove 'highlight' class from all menu items
-  PortfolioMenu.classList.remove('highlight');
-  aboutMenu.classList.remove('highlight');
-  ProjectsMenu.classList.remove('highlight');
-  
-  // Get the position of the "Projects" section
+  const projectsMenu = document.querySelector('#Projects-page');
+
+  const portfolioSection = document.querySelector('#Portfolio');
+  const aboutSection = document.querySelector('#about');
   const projectsSection = document.querySelector('#Projects');
-  const projectsSectionPosition = projectsSection.offsetTop;
-  
-  // Get the current scroll position
+
   const scrollPos = window.scrollY;
-  
-  // Add 'highlight' class to the "Projects" menu item if the page scrolls to the "Projects" section
-  if (scrollPos >= projectsSectionPosition) {
-    ProjectsMenu.classList.add('highlight');
+
+  // Remove 'highlight' class from all menu items
+  portfolioMenu.classList.remove('highlight');
+  aboutMenu.classList.remove('highlight');
+  projectsMenu.classList.remove('highlight');
+
+  // Check if the scroll position matches each section and highlight the corresponding menu item
+  if (scrollPos >= projectsSection.offsetTop) {
+    projectsMenu.classList.add('highlight');
+  } else if (scrollPos >= aboutSection.offsetTop) {
+    aboutMenu.classList.add('highlight');
+  } else if (scrollPos >= portfolioSection.offsetTop) {
+    portfolioMenu.classList.add('highlight');
   }
 };
+
 window.addEventListener('scroll', highlightMenu);
-window.addEventListener('click', highlightMenu);
 
 //  Close mobile Menu when clicking on a menu item
 const hideMobileMenu = () => {
   const menuBars = document.querySelector('.is-active');
-  if (window.innerWidth <= 768 && menuBars) {
+  if (window.innerWidth <= 960 && menuBars) {
     menu.classList.toggle('is-active');
     menuLinks.classList.remove('active');
   }
 };
 
 menuLinks.addEventListener('click', hideMobileMenu);
-navLogo.addEventListener('click', hideMobileMenu);
+
 
 document.querySelectorAll('.bullet-image img').forEach(item => {
   item.addEventListener('click', event => {
