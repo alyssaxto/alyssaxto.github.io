@@ -452,28 +452,53 @@
     background-color: #ff8177;
     transition: 0.3s ease-in;
   }
-  .Projects__card:nth-child(1) {
+  .Projects__wrapper.index .Projects__card:nth-child(1) {
     background-image: url('img/stemuli/s17.png'); /* Specify the path to your background image */
     background-size: cover;
     background-position: center;
   }
-  .Projects__card:nth-child(2) {
+  .Projects__wrapper.index .Projects__card:nth-child(2) {
     background-image: url('img/icanmanage/c3.png'); /* Specify the path to your background image */
     background-size: cover;
     background-position: center;
   }
   
-  .Projects__card:nth-child(3) {
+  .Projects__wrapper.index .Projects__card:nth-child(3) {
     background-image: url('img/budgetbuddy.png'); /* Specify the path to your background image */
     background-size: cover;
     background-position: center;
   }
-
-  .Projects__card:nth-child(4) {
+  .Projects__wrapper.index .Projects__card:nth-child(4) {
     background-image: url('img/thinkpink/tp10.png'); /* Specify the path to your background image */
     background-size: cover;
     background-position: center;
   }
+/* Styles for Page 2 project cards */
+.Projects__wrapper.artwork .Projects__card:nth-child(1) {
+  background-image: url('img/GA/7.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.Projects__wrapper.artwork .Projects__card:nth-child(2) {
+  background-image: url('img/mvp/5.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.Projects__wrapper.artwork .Projects__card:nth-child(3) {
+  background-image: url('img/hackportal.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.Projects__wrapper.artwork .Projects__card:nth-child(4) {
+  background-image: url('img/hackUTD.png');
+  background-size: cover;
+  background-position: center;
+}
+
   .Projects__card h2 {
     font-weight: 550;
     position: absolute; /* Set position to absolute */
@@ -1188,4 +1213,58 @@ iframe {
   display: inline-block;
   transform-origin: center;
   transition: transform 0.2s ease;
+}
+/* password */
+
+
+.login-container {
+  max-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.yellow-link {
+  color: #FFAF48;
+  text-decoration: none; /* Remove default underline */
+}
+
+.yellow-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.blue-link {
+  color: #3FAEFC;
+  text-decoration: none; /* Remove default underline */
+}
+
+.blue-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.pink-link {
+  color: #ff512f;
+  text-decoration: none; /* Remove default underline */
+}
+
+.pink-link:hover {
+  text-decoration: underline; /* Underline on hover */
 }
