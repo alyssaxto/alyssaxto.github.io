@@ -1314,6 +1314,7 @@ input[type="password"] {
 .Gallery__wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+  grid-auto-rows: minmax(auto, auto); /* Automatic row height */
   gap: 20px; /* Adjusted gap between items */
   width: 100%; /* Full width */
   max-width: 1300px; /* Max width of the container */
@@ -1322,7 +1323,6 @@ input[type="password"] {
 }
 
 .Gallery__item {
-  overflow: hidden; /* Ensure images don't overflow */
   border-radius: 4px; /* Rounded corners */
   position: relative;
   cursor: pointer;
@@ -1330,8 +1330,6 @@ input[type="password"] {
 
 .Gallery__item img {
   width: 100%; /* Full width of the image */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove default inline-block spacing */
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
