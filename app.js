@@ -47,3 +47,39 @@ document.querySelectorAll('.bullet-image img').forEach(item => {
     });
   });
 });
+
+// Get the modal element
+var modal = document.getElementById('galleryModal');
+
+// Get the image element inside the modal
+var modalImg = document.getElementById('modalImage');
+
+// Get all gallery items
+var galleryItems = document.querySelectorAll('.Gallery__item');
+
+// Get the close button element
+var closeBtn = document.getElementsByClassName('close')[0];
+
+// Loop through each gallery item
+galleryItems.forEach(function(item) {
+  // Add click event listener to each gallery item
+  item.addEventListener('click', function() {
+    // Display the modal
+    modal.style.display = 'block';
+    // Set the clicked image as the modal content
+    modalImg.src = this.querySelector('img').src;
+  });
+});
+
+// Close the modal when the close button is clicked
+closeBtn.onclick = function() {
+  modal.style.display = 'none';
+};
+
+// Close the modal when user clicks outside of the modal content
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+};
+
