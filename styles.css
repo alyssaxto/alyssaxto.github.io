@@ -95,7 +95,6 @@ body {
   color: #fe4e4e;
 }
 
-  
   @media screen and (max-width: 960px) {
     .navbar__container {
       display: flex;
@@ -1510,3 +1509,4 @@ input[type="password"] {
   margin-top: 0; /* Remove top margin */
   padding-top: 0; /* Remove top padding */
 }
+
