@@ -191,6 +191,30 @@ body {
   .highlight {
     color: #ff4f4f; /* You can adjust the color value */
   }
+
+  .red-link {
+    color: #ff4f4f; /* Red text color */
+    position: relative; /* Ensure pseudo-element positions relative to this element */
+    text-decoration: none;
+  }
+  
+  .red-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px; /* Adjust space between text and underline */
+    width: 100%;
+    height: 1px;
+    background-color: #ff4f4f; /* Red underline color */
+    transform: scaleX(0); /* Initially no width */
+    transform-origin: bottom right; /* Align underline to bottom right */
+    transition: transform 0.2s ease-in-out; /* Transition for underline */
+  }
+  
+  .red-link:hover::after {
+    transform: scaleX(1); /* Full width on hover */
+  }
+  
   /* About Section */
  
   .main {
@@ -308,7 +332,7 @@ body {
   }
   
   #card-2 {
-    background: #ff512f;
+    background: #ff4f4f;
     background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
     background-image: linear-gradient(to right, #dd2476, #ff512f);
   }
@@ -730,7 +754,7 @@ body {
 
 .about__content h1 {
   font-size: 2rem;
-  background-color: #fe4e4e;
+  background-color: #ff4f4f;
   background-size: 100%;
   font-weight: 600;
   -webkit-background-clip: text;
@@ -741,7 +765,7 @@ body {
 
 .about__content h2 {
   font-size: 4rem;
-  background: #fe4e4e;
+  background: #ff4f4f;
   background-size: 100%;
 }
 
@@ -782,7 +806,7 @@ body {
   left: 0;
   width: 0;
   height: 100%;
-  background: #fe4e4e;
+  background: #ff4f4f;
   transition: all 0.35s;
   border-radius: 10px;
 }
@@ -814,7 +838,7 @@ body {
 }
 
 #card-2 {
-  background: #ff512f;
+  background: #ff4f4f;
   background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
   background: linear-gradient(to right, #dd2476, #ff512f);
 }
@@ -1227,7 +1251,7 @@ iframe {
   left: 0;
   width: 0;
   height: 100%;
-  background: #fe4e4e;
+  background: #ff4f4f;
   transition: all 0.35s;
   border-radius: 10px;
 }
@@ -1351,14 +1375,14 @@ input[type="password"] {
   bottom: -1px; /* Adjust space between text and underline */
   width: 100%;
   height: 1px;
-  background-color: #ff512f; /* Pink underline color */
+  background-color: #ff4f4f; /* Pink underline color */
   transform: scaleX(1); /* Full width initially */
   transform-origin: bottom right; /* Align underline to bottom right */
   transition: transform 0.2s ease-in-out; /* Faster transition for underline */
 }
 
 .pink-link:hover {
-  color: #ff512f; /* Pink text color on hover */
+  color: #ff4f4f; /* Pink text color on hover */
 }
 
 /* Purple Link */
