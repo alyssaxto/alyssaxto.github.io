@@ -985,6 +985,8 @@ p {
   font-size: 1.2em;
   line-height: 1.5;
 }
+
+
 .bullet-item {
   display: flex;
   align-items: left;
