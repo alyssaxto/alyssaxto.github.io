@@ -424,18 +424,18 @@ body {
 
   h1 {
     font-size: 24px;
-    color: #ff4f4f; /* Pink color */
+    color: #ff8177; /* Pink color */
     margin-bottom: 10px; /* Adjust spacing */
   }
 
   /* Styling for the anchor tag within h1 */
   h1 a {
       text-decoration: none; /* Remove underline */
-      color: #ff4f4f;; /* Pink color */
+      color: #ff8177; /* Pink color */
   }
   .Projects h1 {
-    background-color: #ff4f4f;
-    color: #ff4f4f;
+    background-color: #ff8177;
+    color: #ff8177;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -463,7 +463,7 @@ body {
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-color: #ff4f4f;
+    background-color: #ff8177;
     transition: 0.3s ease-in;
   }
   .Projects__wrapper.index .Projects__card:nth-child(1) {
@@ -547,11 +547,11 @@ body {
   
   .Projects__card:hover h2,
   .Projects__card:hover p {
-    color: #ff4f4f; /* Change color on hover */
+    color: #ff8177; /* Change color on hover */
   }
   .Projects__card:hover {
     transform: scale(1.075);
-    color: #ff4f4f;
+    color: #ff8177;
     transition: 0.3s ease-in;
     cursor: pointer;
     
