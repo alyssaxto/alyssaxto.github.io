@@ -424,18 +424,18 @@ body {
 
   h1 {
     font-size: 24px;
-    color: #ff8177; /* Pink color */
+    color: #ff4f4f; /* Pink color */
     margin-bottom: 10px; /* Adjust spacing */
   }
 
   /* Styling for the anchor tag within h1 */
   h1 a {
       text-decoration: none; /* Remove underline */
-      color: #ff8177; /* Pink color */
+      color: #ff4f4f;; /* Pink color */
   }
   .Projects h1 {
-    background-color: #ff8177;
-    color: #ff8177;
+    background-color: #ff4f4f;
+    color: #ff4f4f;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -463,7 +463,7 @@ body {
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-color: #ff8177;
+    background-color: #ff4f4f;
     transition: 0.3s ease-in;
   }
   .Projects__wrapper.index .Projects__card:nth-child(1) {
@@ -547,11 +547,11 @@ body {
   
   .Projects__card:hover h2,
   .Projects__card:hover p {
-    color: #ff8177; /* Change color on hover */
+    color: #ff4f4f; /* Change color on hover */
   }
   .Projects__card:hover {
     transform: scale(1.075);
-    color: #ff8177;
+    color: #ff4f4f;
     transition: 0.3s ease-in;
     cursor: pointer;
     
@@ -839,8 +839,6 @@ body {
 
 #card-2 {
   background: #ff4f4f;
-  background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
-  background: linear-gradient(to right, #dd2476, #ff512f);
 }
 
 /* Mobile Responsive */
@@ -1385,6 +1383,7 @@ input[type="password"] {
   color: #ff4f4f; /* Pink text color on hover */
 }
 
+
 /* Purple Link */
 .purple-link {
   color: #000; /* Black text color */
@@ -1448,7 +1447,7 @@ input[type="password"] {
 }
 
 .Gallery h1 {
-  background-color: #ff8177;
+  background-color: #ff4f4f;
   color: #ffffff; /* White text color */
   margin-top: 0;
   margin-bottom: 20px; /* Increased bottom margin */
@@ -1474,6 +1473,15 @@ input[type="password"] {
   border-radius: 4px; /* Rounded corners */
   position: relative;
   cursor: pointer;
+  text-align: center; /* Center align text */
+  overflow: hidden; /* Ensure text doesn't overflow */
+}
+
+.Gallery__item h2 {
+  font-size: 1.5rem; /* Adjust size as needed */
+  margin-top: 0.5rem; /* Small margin at the top */
+  margin-bottom: 1.3rem; /* No margin at the bottom */
+  color: #333; /* Text color for the heading */
 }
 
 .Gallery__item img {
@@ -1484,7 +1492,6 @@ input[type="password"] {
 .Gallery__item:hover img {
   transform: scale(1.1); /* Scale up the image on hover */
 }
-
 /* Modal Styles */
 .modal {
   display: none; /* Hidden by default */
