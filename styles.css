@@ -986,8 +986,8 @@ h3 {
 
 .bullets p {
   max-width: 1000px;
-  font-size: 1.2em;
-  line-height: 1.5;
+  font-size: 1.3em;
+  line-height: 1.8;
 }
 
 .bullets p::before {
@@ -1542,3 +1542,29 @@ input[type="password"] {
   padding-top: 0; /* Remove top padding */
 }
 
+/* CSS for Large Green Numbers with Text */
+
+
+.number-box {
+  display: flex;
+  align-items: center;
+  background-color: #00A650; /* Green background */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%; /* Take up full width within max-width */
+}
+
+.number {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #ffffff;
+}
