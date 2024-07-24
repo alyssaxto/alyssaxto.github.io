@@ -1544,11 +1544,11 @@ input[type="password"] {
 
 /* CSS for Large Green Numbers with Text */
 
-
 .number-box {
   display: flex;
+  flex-direction: column; /* Stack items vertically on mobile */
   align-items: center;
-  background-color: #00A650; /* Green background */
+  background-color: #99CC00; /* Green background */
   color: white;
   padding: 20px;
   border-radius: 10px;
@@ -1559,12 +1559,90 @@ input[type="password"] {
 .number {
   font-size: 4rem;
   font-weight: bold;
-  color: #ffffff;
-  margin-right: 20px;
+  margin-right: 0; /* Remove margin on mobile */
+  margin-bottom: 10px; /* Add margin bottom for spacing */
 }
 
 .text {
   font-size: 1.8rem;
   font-weight: 500;
-  color: #ffffff;
+  text-align: center; /* Center align text on mobile */
+  margin-bottom: 0; /* Remove margin bottom on mobile */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .number-box {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .number {
+    font-size: 3rem; /* Decrease font size for number on smaller screens */
+  }
+
+  .text {
+    font-size: 1.4rem; /* Decrease font size for text on smaller screens */
+  }
+}
+
+.lime-highlight {
+  color: #99CC00;
+  font-weight: 700;
+  /* Additional styling */
+}
+
+h4 {
+  font-size: 2em;
+  text-align: center;
+  color: #000;
+  font-weight: 450; 
+  margin: 0;
+  padding: 0;
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 10px;
+}
+
+.quote-cell {
+  background-color: #99CC00;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.quote-cell h2 {
+  font-size: 1.5rem;
+  font-weight: 600; 
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  font-weight: 350; 
+  color: white;
+  font-style: italic;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .quote-grid {
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+  }
+
+  .quote-cell {
+    padding: 15px;
+  }
+
+  .quote-cell h2 {
+    font-size: 1.3rem;
+  }
+
+  .quote-text {
+    font-size: 1rem;
+  }
 }
