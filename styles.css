@@ -467,23 +467,23 @@ body {
     transition: 0.3s ease-in;
   }
   .Projects__wrapper.index .Projects__card:nth-child(1) {
-    background-image: url('img/stemuli/s17.png'); /* Specify the path to your background image */
+    background-image: url('img/bp/6.png'); /* Specify the path to your background image */
     background-size: cover;
     background-position: center;
   }
   .Projects__wrapper.index .Projects__card:nth-child(2) {
-    background-image: url('img/icanmanage/c3.png'); /* Specify the path to your background image */
+    background-image: url('img/stemuli/s17.png'); /* Specify the path to your background image */
     background-size: cover;
     background-position: center;
   }
   
   .Projects__wrapper.index .Projects__card:nth-child(3) {
-    background-image: url('img/budgetbuddy.png'); /* Specify the path to your background image */
+    background-image: url('img/icanmanage/c3.png'); /* Specify the path to your background image */
     background-size: cover;
     background-position: center;
   }
   .Projects__wrapper.index .Projects__card:nth-child(4) {
-    background-image: url('img/thinkpink/tp10.png'); /* Specify the path to your background image */
+    background-image: url('img/budgetbuddy.png'); /* Specify the path to your background image */
     background-size: cover;
     background-position: center;
   }
