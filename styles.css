@@ -975,7 +975,7 @@ h3 {
 }
 
 .header__image {
-  max-width: 550px; /* Adjust the max-width as needed */
+  max-width: 700px; /* Adjust the max-width as needed */
   height: auto; /* Maintain aspect ratio */
   margin-top: -60px;
   margin-bottom: -60px; /* Adjust the margin-bottom as needed */
@@ -1548,7 +1548,7 @@ input[type="password"] {
   display: flex;
   flex-direction: column; /* Stack items vertically on mobile */
   align-items: center;
-  background-color: #99CC00; /* Green background */
+  background-color: #00A650; /* Green background */
   color: white;
   padding: 20px;
   border-radius: 10px;
@@ -1586,7 +1586,7 @@ input[type="password"] {
 }
 
 .lime-highlight {
-  color: #99CC00;
+  color: #00A650;
   font-weight: 700;
   /* Additional styling */
 }
@@ -1607,7 +1607,7 @@ h4 {
 }
 
 .quote-cell {
-  background-color: #99CC00;
+  background-color: #00A650;
   padding: 20px;
   text-align: center;
   color: white;
