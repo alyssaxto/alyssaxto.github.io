@@ -946,15 +946,6 @@ h3 {
   padding: 20px 20px 0px 30px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.grid__item {
-  text-align: left;
-}
 
 .header__title {
   max-width: 1000px;
@@ -1101,11 +1092,7 @@ iframe {
 }
 
 @media screen and (max-width: 1100px) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
+
   .video-container {
     width: 70%; /* Adjust width for smaller screens */
     height: 300px; /* Let the height adjust automatically to maintain aspect ratio */
@@ -1548,7 +1535,7 @@ input[type="password"] {
   display: flex;
   flex-direction: column; /* Stack items vertically on mobile */
   align-items: center;
-  background-color: #99CC00; /* Green background */
+  background-color: #00A650; /* Green background */
   color: white;
   padding: 20px;
   border-radius: 10px;
@@ -1586,7 +1573,7 @@ input[type="password"] {
 }
 
 .lime-highlight {
-  color: #99CC00;
+  color: #00A650;
   font-weight: 700;
   /* Additional styling */
 }
@@ -1607,7 +1594,7 @@ h4 {
 }
 
 .quote-cell {
-  background-color: #99CC00;
+  background-color: #00A650;
   padding: 20px;
   text-align: center;
   color: white;
@@ -1645,4 +1632,131 @@ h4 {
   .quote-text {
     font-size: 1rem;
   }
+}
+
+.line {
+  border-top: 1px solid #000000; /* Adjust thickness and color as needed */
+  width: 100%; /* Adjust width as needed */
+  margin: 20px 0; /* Adjust margin as needed */
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  background: radial-gradient(circle, rgba(173, 255, 47, 0.6) 0%, rgba(0, 120, 9, 0.6) 100%);
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  padding: 0px 20px 0px; /* Adjusted padding to move content up more */
+  color: #fff;
+  text-align: center; /* Center text content */
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+.hero-content {
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1; /* Ensure content is above background */
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #000000; /* Adjust text color as needed */
+}
+
+.hero h2 {
+  margin-bottom: 10px;
+  color: #4b4b4b; /* Adjust text color as needed */
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #000; /* Adjust text color as needed */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.grid__item {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.grid__item h2 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #4b4b4b; /* Adjust text color as needed */
+}
+
+.grid__item p {
+  font-size: 1em;
+  margin: 0;
+  color: #000; /* Adjust text color as needed */
+}
+
+.hero-image {
+  max-width: 50%;
+  margin-top: -50px; /* Move the image up */
+  z-index: 0; /* Ensure image is behind content */
+}
+
+.hero-image img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center image horizontally */
+}
+
+.read-more {
+  position: absolute;
+  bottom: 100px; /* Adjust position from bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1; /* Ensure above background */
+}
+
+.read-more:hover {
+  color: #00A650;
+
+}
+@media (max-width: 768px) {
+  .hero {
+      height: 100%; /* Adjusted minimum height */
+      padding: 80px 20px 20px; /* Adjusted padding for mobile */
+      flex-direction: column; /* Stack content vertically on smaller screens */
+      text-align: center;
+  }
+  .hero-content {
+      max-width: 100%;
+      margin-bottom: 20px;
+      z-index: 1; /* Ensure content is above background */
+  }
+  .hero-image {
+      max-width: 100%;
+      margin-top: 20px; /* Adjusted margin top for mobile */
+      z-index: 0; /* Ensure image is behind content */
+  }
+  .read-more {
+      position: static; /* Reset position for mobile */
+      margin-top: 20px; /* Add space between content and read more */
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: auto auto; /* 2 rows */
+    grid-gap: 10px; /* Adjust gap between grid items */
+}
+}
+.bp-text {
+  color: #00A650; /* Set text color to #00A650 */
 }
