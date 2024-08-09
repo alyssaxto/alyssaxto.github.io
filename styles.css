@@ -989,6 +989,12 @@ h3 {
   font-size: 1.3em;
   line-height: 1.8;
 }
+.bullets p2 {
+  color: #000000;
+  font-size: 1.4em; /* Adjust the font size as needed */
+  margin: 0 0 50px 0; /* Adds 20px space at the bottom */
+}
+
 
 .bullets p::before {
   content: '\2022';
@@ -1590,7 +1596,11 @@ input[type="password"] {
   font-weight: 700;
   /* Additional styling */
 }
-
+.grey-highlight {
+  color: #787878;
+  font-weight: 400;
+  /* Additional styling */
+}
 h4 {
   font-size: 2em;
   text-align: center;
