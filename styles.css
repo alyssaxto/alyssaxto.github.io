@@ -1651,3 +1651,11 @@ html, body {
   height: 60%; /* Adjust height to make the GIF smaller */
   width: auto; /* Maintain aspect ratio */
 }
+
+/* Mobile specific styles */
+@media (max-width: 1024px) {
+  .search-text,
+  .scroll-container {
+    display: none; /* Hide both elements on mobile screens */
+  }
+}
