@@ -57,12 +57,12 @@ body {
 
 .navbar__item {
   height: 60px;
-  padding: 20px 20px;
+  padding: 20px 15px;
 }
 
 .navbar__last-child {
   border-right: 0;
-  padding: 20px 20px;
+  padding: 20px 15px;
 }
 
 
@@ -411,204 +411,131 @@ body {
   
   }
   
-  /* Projects Section */
-  .Projects {
-    background: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 6rem 0;
-  }
-
-  h1 {
-    font-size: 24px;
-    color: #ff8177; /* Pink color */
-    margin-bottom: 10px; /* Adjust spacing */
-  }
-
-  /* Styling for the anchor tag within h1 */
-  h1 a {
-      text-decoration: none; /* Remove underline */
-      color: #ff8177; /* Pink color */
-  }
-  .Projects h1 {
-    background-color: #ff8177;
-    color: #ff8177;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 2.5rem;
-    text-decoration: none;
-    font-weight: 500;
-  }
+/* Projects Section */
+.Projects {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 4rem 1rem; /* Adjust padding for smaller screens */
   
-  .Projects__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  
-  .Projects__card {
-    margin: 75px;
-    margin-bottom: 100px;
-    height: 330px;
-    width: 550px;
-    position: relative;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    background-color: #ff8177;
-    transition: 0.3s ease-in;
-  }
-  .Projects__wrapper.index .Projects__card:nth-child(1) {
-    background-image: url('img/bp/6.png'); /* Specify the path to your background image */
-    background-size: cover;
-    background-position: center;
-  }
-  .Projects__wrapper.index .Projects__card:nth-child(2) {
-    background-image: url('img/stemuli/s17.png'); /* Specify the path to your background image */
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .Projects__wrapper.index .Projects__card:nth-child(3) {
-    background-image: url('img/icanmanage/c3.png'); /* Specify the path to your background image */
-    background-size: cover;
-    background-position: center;
-  }
-  .Projects__wrapper.index .Projects__card:nth-child(4) {
-    background-image: url('img/budgetbuddy.png'); /* Specify the path to your background image */
-    background-size: cover;
-    background-position: center;
-  }
-/* Styles for Page 2 project cards */
-.Projects__wrapper.artwork .Projects__card:nth-child(1) {
-  background-image: url('img/GA/7.png');
-  background-size: cover;
-  background-position: center;
 }
 
-.Projects__wrapper.artwork .Projects__card:nth-child(2) {
-  background-image: url('img/mvp/5.png');
-  background-size: cover;
-  background-position: center;
+h1 {
+  font-size: 24px;
+  color: #ff8177; /* Pink color */
+  margin-bottom: 10px; /* Adjust spacing */
 }
 
-.Projects__wrapper.artwork .Projects__card:nth-child(3) {
-  background-image: url('img/hackportal.png');
-  background-size: cover;
-  background-position: center;
+h1 a {
+  text-decoration: none; /* Remove underline */
+  color: #ff8177; /* Pink color */
 }
 
-
-.Projects__wrapper.artwork .Projects__card:nth-child(4) {
-  background-image: url('img/hackUTD.png');
-  background-size: cover;
-  background-position: center;
+.Projects h1 {
+  background-color: #ff8177;
+  color: #ff8177;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-  .Projects__card h2 {
-    font-weight: 550;
-    position: absolute; /* Set position to absolute */
-    bottom: -45px; /* Align below the .Projects__card */
-    left: 50%; /* Align to the center horizontally */
-    transform: translateX(-50%); /* Adjust horizontally to center */
-    color: #000; /* Default color */
-    transition: color 0.3s ease; /* Add transition effect for smooth color change */
+.Projects__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px; /* Limit maximum width */
+}
+
+.Projects__card {
+  position: relative; /* Ensure the card is positioned correctly */
+  overflow: hidden; /* Ensure content stays within the card */
+  padding: 10px; /* Add padding inside the card */
+  padding-bottom: 40px; /* Ensure more space at the bottom */
+  background-color: #fff; /* Background color of the card */
+  border-radius: 10px; /* Match card's border radius */
+  transition: box-shadow 0.3s ease-in, transform 0.3s ease-in; /* Smooth transition for shadow and scaling */
+}
+
+.Projects__card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow appears on hover */
+  transform: scale(1.05); /* Slightly scale up the card on hover */
+}
+.Projects__card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.Projects__card h2 {
+  font-size: 1.5rem; /* Responsive font size */
+  font-weight: 550;
+  margin: 15px 0 5px 0; /* Margin above and below the heading */
+  text-align: center;
+  color: #000;
+  transition: color 0.3s ease;
 }
 
 .Projects__card p {
+  font-size: 1rem; /* Responsive font size */
   font-weight: 400;
-    position: absolute; /* Set position to absolute */
-    bottom: -90px; /* Align to the bottom */
-    left: 50%; /* Align to the center horizontally */
-    transform: translateX(-50%); /* Adjust horizontally to center */
-    font-size: 15px;
-    width: 500px;
-    height: auto;
-    text-align: center; /* Align text to the center horizontally */
-    display: flex; /* Enable flexbox layout */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    color: #000; /* Default color */
-    transition: color 0.3s ease; /* Add transition effect for smooth color change */
+  margin: 0 10px 15px 10px; /* Margin below the paragraph and padding on the sides */
+  text-align: center;
+  color: #000;
+  transition: color 0.3s ease;
 }
-  
 
-  .Projects__card button:hover {
-    cursor: pointer;
-  }
-  
-  .Projects__card:hover h2,
-  .Projects__card:hover p {
-    color: #ff8177; /* Change color on hover */
-  }
-  .Projects__card:hover {
-    transform: scale(1.075);
-    color: #ff8177;
-    transition: 0.3s ease-in;
-    cursor: pointer;
-    
-  }
-  
-  @media screen and (max-width: 1300px) {
-    .Projects__wrapper {
-      grid-template-columns: 1fr 1fr;
-      width: 90%;
-    }
-  
-    .Projects__card {
-      margin: 20px; /* Adjust the margin for spacing between cards */
-      margin-bottom: 150px; /* Adjust the bottom margin */
-      height: 250px; /* Adjust the height of the card */
-      width: calc(100% - 10px); /* Adjust the width of the card */
-      /* Other styles remain unchanged */
-    }
-    .Projects__card p {
-      width: calc(100% - 10px); /* Adjust the width of text content */
-      margin-bottom: -30px;
-      /* Other styles remain unchanged */
-    }
-    
-    .Projects__card h2 {
-      text-align: center;
-      width: calc(100% - 10px); /* Adjust the width of text content */
-      /* Other styles remain unchanged */
-    }
-    
+.Projects__card:hover h2,
+.Projects__card:hover p {
+  color: #ff8177; /* Change color on hover */
+}
+
+.Projects__card:hover {
+  transform: scale(1.05); /* Slightly reduce scale on hover for better mobile interaction */
+  cursor: pointer;
+}
+
+
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .Projects__wrapper {
+    grid-template-columns: 1fr; /* Stack cards in a single column */
+    grid-template-rows: auto;
+    gap: 20px; /* Reduced gap for smaller screens */
   }
 
-  @media screen and (max-width: 768px) {
-    .Projects__wrapper {
-      grid-template-columns: 1fr;
-      width: 90%; /* Adjust the width as needed */
-    }
-  
-    .Projects__card {
-      margin: 5px; /* Adjust the margin for spacing between cards */
-      margin-bottom: 150px; /* Adjust the bottom margin */
-      height: 200px; /* Adjust the height of the card */
-      width: calc(100% - 10px); /* Adjust the width of the card */
-      /* Other styles remain unchanged */
-    }
-    .Projects__card p {
-      width: calc(100% - 10px); /* Adjust the width of text content */
-      margin-bottom: -30px;
-      /* Other styles remain unchanged */
-    }
-    
-    .Projects__card h2 {
-      text-align: center;
-      width: calc(100% - 10px); /* Adjust the width of text content */
-      /* Other styles remain unchanged */
-    }
+  .Projects__card {
+    width: 100%; /* Full width for mobile */
+    max-width: none; /* Remove max-width constraint */
+    padding: 20px; /* Ensure padding is applied on mobile */
   }
+
+  h1 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .Projects__card h2 {
+    font-size: 1.25rem; /* Smaller font size for mobile */
+  }
+
+  .Projects__card p {
+    font-size: 0.875rem; /* Smaller font size for mobile */
+  }
+}
+
+
   /* Footer Section */
   .footer {
     position: relative;
