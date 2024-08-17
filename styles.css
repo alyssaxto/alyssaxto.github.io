@@ -1603,3 +1603,51 @@ h4 {
 .link-container a:hover {
   background-color: #0056b3;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.search-text {
+  position: fixed;
+  top: 50%; /* Adjust this if needed */
+  left: 20px; /* Position on the left */
+  transform: translateY(-50%); /* Center vertically relative to its own height */
+  color: #333; /* Text color */
+  font-size: 1.5rem; /* Font size */
+  background: rgba(255, 255, 255, 0.8); /* Background for readability */
+  border: 2px solid #333; /* Border around the bubble */
+  border-radius: 20px; /* Rounded corners for the bubble */
+  z-index: 10; /* Ensure text stays on top of other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for depth */
+  padding: 10px 15px; /* General padding */
+  margin-top: 50px; /* Move text lower by adjusting margin */
+  position: relative; /* For the pseudo-element positioning */
+  display: inline-block; /* Adjust width to fit the text */
+}
+
+.scroll-container {
+  position: relative;
+  width: 100vw; /* Full width of viewport */
+  height: 25vh; /* Adjust height if needed */
+  overflow: hidden; /* Hide any overflow */
+  margin-left: 60px; /* Adjust to reduce the gap between the GIF and the text */
+}
+
+.scroll-content {
+  position: absolute; /* Use absolute positioning to move horizontally */
+  top: 0;
+  left: 0; /* Start from the left side of the viewport */
+  max-width: calc(100vw - 40px); /* Ensure the text stays within the viewport */
+  height: 100%;
+  width: 1vw; /* Extend the width to allow fast scrolling effect */
+  display: flex;
+  align-items: center;
+}
+
+.scroll-content img {
+  height: 60%; /* Adjust height to make the GIF smaller */
+  width: auto; /* Maintain aspect ratio */
+}

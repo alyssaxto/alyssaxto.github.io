@@ -82,3 +82,16 @@ window.onclick = function(event) {
     modal.style.display = 'none';
   }
 };
+
+document.addEventListener('scroll', function() {
+  const scrollPosition = window.scrollY;
+  const scrollContent = document.querySelector('.scroll-content');
+  const scrollText = document.querySelector('.search-text');
+  
+  // Adjust the factor for faster horizontal scrolling
+  const scrollFactor = 4.5; // Increase this value for faster scroll
+
+  // Set the horizontal scroll position based on vertical scroll
+  scrollContent.style.transform = `translateX(${scrollPosition * scrollFactor}px)`;
+  scrollText.style.transform = `translateX(${scrollPosition * scrollFactor}px)`;
+});
