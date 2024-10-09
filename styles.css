@@ -9,6 +9,8 @@
 
 body {
   margin: 0; /* Remove default margin */
+  cursor: url('img/cursor.png'), auto; /* Replace with the path to your cursor image */
+
 }
 
 .navbar {
@@ -1657,4 +1659,27 @@ html, body {
   .scroll-container {
     display: none; /* Hide both elements on mobile screens */
   }
+}
+
+/* Flexbox to center the image horizontally */
+.image-containy {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Vertically center if needed */
+}
+
+/* Styling for the image */
+.hover-image {
+  max-width: 800px; /* Max width for the image */
+  border-radius: 10px; /* Rounded corners */
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Space between text and image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.hover-image:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
 }

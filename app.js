@@ -95,3 +95,8 @@ document.addEventListener('scroll', function() {
   scrollContent.style.transform = `translateX(${scrollPosition * scrollFactor}px)`;
   scrollText.style.transform = `translateX(${scrollPosition * scrollFactor}px)`;
 });
+
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Custom cursor is applied!');
+});
