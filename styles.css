@@ -541,7 +541,7 @@ h1 a {
   .footer {
     position: relative;
     background-color: #ffffff;
-    color: #FFB6C1;
+    color: #414141;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -562,7 +562,7 @@ h1 a {
   }
   
   .footer__link {
-    color: #FFB6C1;
+    color: #414141;
     text-decoration: none;
     margin-left: 10px;
   }
@@ -573,7 +573,7 @@ h1 a {
   
   .footer__bottom {
     position: absolute;
-    color: #FFB6C1;
+    color: #414141;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -887,8 +887,7 @@ h3 {
 
 .header__title {
   max-width: 1000px;
-  margin: 50px auto;
-  padding: 20px 20px 30px;
+  margin: 50px auto 0px;
   font-size: 3em;
   text-align: left;
   color: #000;
@@ -896,7 +895,6 @@ h3 {
 }
 
 .summary{
-  margin-top: 30px;
   font-size: 1.2em;
   font-weight: 100px;
   line-height: 1.5;
