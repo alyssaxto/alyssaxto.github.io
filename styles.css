@@ -456,6 +456,14 @@ h1 a {
   width: 100%;
   max-width: 1200px; /* Limit maximum width */
 }
+.Projects2__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px; /* Limit maximum width */
+}
 
 .Projects__card {
   position: relative; /* Ensure the card is positioned correctly */
