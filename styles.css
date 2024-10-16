@@ -544,6 +544,14 @@ h1 a {
   }
 }
 
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .Projects2__wrapper {
+    grid-template-columns: 1fr; /* Stack cards in a single column */
+    grid-template-rows: auto;
+    gap: 20px; /* Reduced gap for smaller screens */
+  }
+}
 
   /* Footer Section */
   .footer {
