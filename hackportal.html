@@ -13,31 +13,46 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 </style>
-<style>
-    /* Apply the font to the logo text */
-    #navbar__logo {
-        font-family: 'Silkscreen', sans-serif;
-    }
 
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+</style>
+<style>
+  /* Apply the font to the logo text */
+  #navbar__logo {
+      font-family: 'Silkscreen', sans-serif;
+  }
 </style>
 </head>
+<body>
+<!-- Navbar HTML (navbar.html) -->
 <div class="navbar">
-  <div class="navbar__container">
-    <!-- Hamburger Icon -->
-    <div class="navbar__toggle" id="mobile-menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-    <!-- Menu Items -->
-    <ul class="navbar__menu">
-      <li class="navbar__item"><a href="index.html#Projects" class="navbar__links" id="Projects-page"><b>WORK</b></a></li>
-      <li class="navbar__item"><a href="artwork.html" class="navbar__links"><b>PLAY</b></a></li>
-      <li class="navbar__item"><a href="about.html" class="navbar__links" id="about-page"><b>ABOUT</b></a></li>
-      <li class="navbar__item navbar__last-child"><a href="img/AlyssaTo_Resume.pdf" class="navbar__links" id="Resume" target="_blank"><b>RESUME</b></a></li>
-    </ul>
+<div class="navbar__container">
+  <!-- Hamburger Icon for mobile -->
+  <div class="navbar__toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
   </div>
+
+  <!-- Navbar Menu -->
+  <ul class="navbar__menu">
+    <li class="navbar__item"><a href="index.html#Projects" class="navbar__links"><b>WORK</b></a></li>
+    <li class="navbar__item"><a href="artwork.html" class="navbar__links"><b>PLAY</b></a></li>
+    <li class="navbar__item"><a href="about.html" class="navbar__links"><b>ABOUT</b></a></li>
+    <li class="navbar__item navbar__last-child"><a href="img/AlyssaTo_Resume.pdf" class="navbar__links" target="_blank"><b>RESUME</b></a></li>
+  </ul>
 </div>
+</div>
+
+
+<!-- Modal for Fullscreen Display -->
+<div id="galleryModal" class="modal">
+<span class="close">&times;</span>
+<img class="modal-content" id="modalImage">
+</div>
+
+
 
 
     <header class="header">

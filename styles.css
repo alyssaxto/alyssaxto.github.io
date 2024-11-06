@@ -1,17 +1,16 @@
+/* Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   font-weight: 500;
 }
 
 body {
-  margin: 0; /* Remove default margin */
-  cursor: url('img/cursor.png'), auto; /* Replace with the path to your cursor image */
-  
-
+  margin: 0;
+  cursor: url('img/cursor.png'), auto; /* Add custom cursor */
 }
 
 /* Main Navbar Style */
@@ -23,18 +22,16 @@ body {
   align-items: center;
   position: fixed;
   top: 15px;
-  left: 50%; /* Centering the navbar on desktop */
-  transform: translateX(-50%); /* Center the navbar horizontally */
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 999;
   border-radius: 40px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 0 20px;
-  width: auto; /* Allow full width */
+  width: auto;
 }
 
-
-/* Navbar Container */
 .navbar__container {
   display: flex;
   justify-content: space-between;
@@ -46,10 +43,10 @@ body {
 .navbar__menu {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the menu items */
+  justify-content: center;
   list-style: none;
-  font-size: 1.5rem; /* Keep previous font size */
-  width: 100%; /* Take full width of navbar */
+  font-size: 1.5rem;
+  width: 100%;
 }
 
 /* Navbar Item Style with Hover Padding */
@@ -99,30 +96,29 @@ body {
   gap: 4px;
   justify-content: center;
   align-items: center;
-  width: 40px; /* Circle size */
+  width: 40px;
   height: 40px;
-  border-radius: 50%; /* Make it circular */
-  background-color: #ffffff; /* Circle background color */
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 .bar {
   width: 20px;
   height: 3px;
-  background-color: #ff8177;  /* Bar color */
+  background-color: #ff8177;
   transition: 0.3s;
 }
 
 /* Mobile View Adjustments */
 @media screen and (max-width: 768px) {
-  /* Navbar width is smaller, aligned right */
   .navbar {
-    width: 60px; /* Make the navbar just the size of the circle */
+    width: 60px;
     top: 15px;
-    right: 15px; /* Position it on the right side of the screen */
-    border-radius: 50%; /* Circular navbar */
-    justify-content: center; /* Keep it centered vertically */
-    left: auto; /* Remove the default left positioning */
-    transform: none; /* Remove the translation for centering */
+    right: 15px;
+    border-radius: 50%;
+    justify-content: center;
+    left: auto;
+    transform: none;
   }
 
   /* Show hamburger icon on mobile */
@@ -136,21 +132,20 @@ body {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 60px; /* Below the navbar */
-    right: 0; /* Align it with the right side of the navbar */
+    top: 60px;
+    right: 0;
     background: #ffeded;
     border-radius: 20px;
-    width: 200px; /* Adjust the width of the menu */
-    transform: translateX(100%); /* Initially position it off-screen */
-    transition: transform 0.3s ease; /* Add a sliding effect */
+    width: 200px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
   }
 
   /* Show menu when active */
   .navbar__menu.active {
-    display: flex; /* Ensure it is flex when active */
-    transform: translateX(0); /* Ensure it slides in */
+    display: flex;
+    transform: translateX(0);
   }
-  
 
   /* Hamburger icon animation */
   .navbar__toggle.active .bar:nth-child(2) {
@@ -163,7 +158,6 @@ body {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-
 
 
 

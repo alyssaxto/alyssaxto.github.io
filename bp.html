@@ -3,13 +3,13 @@
 <head>
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <meta charset="UTF-8" />
-  <script src="app.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alyssa To | Portfolio</title>
   <!-- Import Google Fonts -->
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
   <link rel="stylesheet" href="styles.css" />
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 </style>
@@ -18,26 +18,37 @@
     #navbar__logo {
         font-family: 'Silkscreen', sans-serif;
     }
-
 </style>
 </head>
+<body>
+<!-- Navbar HTML (navbar.html) -->
 <div class="navbar">
   <div class="navbar__container">
-    <!-- Hamburger Icon -->
+    <!-- Hamburger Icon for mobile -->
     <div class="navbar__toggle" id="mobile-menu">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
     </div>
-    <!-- Menu Items -->
+
+    <!-- Navbar Menu -->
     <ul class="navbar__menu">
-      <li class="navbar__item"><a href="index.html#Projects" class="navbar__links" id="Projects-page"><b>WORK</b></a></li>
+      <li class="navbar__item"><a href="index.html#Projects" class="navbar__links"><b>WORK</b></a></li>
       <li class="navbar__item"><a href="artwork.html" class="navbar__links"><b>PLAY</b></a></li>
-      <li class="navbar__item"><a href="about.html" class="navbar__links" id="about-page"><b>ABOUT</b></a></li>
-      <li class="navbar__item navbar__last-child"><a href="img/AlyssaTo_Resume.pdf" class="navbar__links" id="Resume" target="_blank"><b>RESUME</b></a></li>
+      <li class="navbar__item"><a href="about.html" class="navbar__links"><b>ABOUT</b></a></li>
+      <li class="navbar__item navbar__last-child"><a href="img/AlyssaTo_Resume.pdf" class="navbar__links" target="_blank"><b>RESUME</b></a></li>
     </ul>
   </div>
 </div>
+
+
+<!-- Modal for Fullscreen Display -->
+<div id="galleryModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+
 
 
         <header class="header">
@@ -359,13 +370,8 @@
     <div class="portfolio__btn-container">
       <button class="portfolio__btn"><a href="https://www.sketch.com/s/c9b990dc-07b7-475c-bc85-7f25983cddba/prototype/0BA96799-2455-47F0-B616-F78B30FCBFCE/a/0BA96799-2455-47F0-B616-F78B30FCBFCE" target="_blank">Clickable Sketch Prototype</a></button>
     </div>
-    
   </div>
-<!-- Modal for Fullscreen Display -->
-<div id="galleryModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="modalImage">
-</div>
+
   <!-- Third Section -->
   <div class="container">
     <h2>Summary</h2>

@@ -72,13 +72,13 @@ document.addEventListener('scroll', function() {
   scrollText.style.transform = `translateX(${scrollPosition * scrollFactor}px)`;
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  console.log('Page loaded'); // Check if this prints in the console
-  document.getElementById("mobile-menu").addEventListener("click", function() {
-    const navbarMenu = document.querySelector(".navbar__menu");
-    const navbarToggle = document.querySelector(".navbar__toggle");
+// Navbar Mobile Menu Toggle (navbar.js)
+document.addEventListener('DOMContentLoaded', function () {
+  const mobileMenuButton = document.getElementById('mobile-menu');
+  const navbarMenu = document.querySelector('.navbar__menu');
 
-    navbarMenu.classList.toggle("active");
-    navbarToggle.classList.toggle("active");
+  mobileMenuButton.addEventListener('click', () => {
+    navbarMenu.classList.toggle('active');
+    mobileMenuButton.classList.toggle('active');
   });
 });
