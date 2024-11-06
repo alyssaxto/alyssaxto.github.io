@@ -13,24 +13,6 @@ body {
   
 
 }
-/* Main Navbar Style */
-.navbar {
-  background: #fff;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 15px;
-  left: 50%; /* Centering the navbar on desktop */
-  transform: translateX(-50%); /* Center the navbar horizontally */
-  z-index: 999;
-  border-radius: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 0 20px;
-  width: auto; /* Allow full width */
-}
 
 /* Main Navbar Style */
 .navbar {
@@ -50,26 +32,6 @@ body {
   padding: 0 20px;
   width: auto; /* Allow full width */
 }
-
-/* Main Navbar Style */
-.navbar {
-  background: #fff;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 15px;
-  left: 50%; /* Centering the navbar on desktop */
-  transform: translateX(-50%); /* Center the navbar horizontally */
-  z-index: 999;
-  border-radius: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 0 20px;
-  width: auto; /* Allow full width */
-}
-
 
 
 /* Navbar Container */
@@ -185,9 +147,10 @@ body {
 
   /* Show menu when active */
   .navbar__menu.active {
-    display: flex;
-    transform: translateX(0); /* Slide in the menu */
+    display: flex; /* Ensure it is flex when active */
+    transform: translateX(0); /* Ensure it slides in */
   }
+  
 
   /* Hamburger icon animation */
   .navbar__toggle.active .bar:nth-child(2) {

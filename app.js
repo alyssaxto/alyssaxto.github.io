@@ -73,18 +73,12 @@ document.addEventListener('scroll', function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
+  console.log('Page loaded'); // Check if this prints in the console
   document.getElementById("mobile-menu").addEventListener("click", function() {
     const navbarMenu = document.querySelector(".navbar__menu");
     const navbarToggle = document.querySelector(".navbar__toggle");
 
-    // Toggle active class on both the menu and the hamburger icon
     navbarMenu.classList.toggle("active");
     navbarToggle.classList.toggle("active");
   });
 });
-
-console.log(document.getElementById("mobile-menu"));
-console.log(document.querySelector(".navbar__menu"));
-console.log(document.querySelector(".navbar__toggle"));
-
-
