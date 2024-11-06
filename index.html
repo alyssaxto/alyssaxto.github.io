@@ -3,6 +3,7 @@
 <head>
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <meta charset="UTF-8" />
+  <script src="app.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alyssa To | Portfolio</title>
   <!-- Import Google Fonts -->
@@ -17,37 +18,28 @@
     #navbar__logo {
         font-family: 'Silkscreen', sans-serif;
     }
-
 </style>
 </head>
 <body>
   
-  <nav class="navbar">
+  <div class="navbar">
     <div class="navbar__container">
-      <a href="index.html" id="navbar__logo">
-        <span class="logo-text">ALYSSA TO</span>
-      </a>
+      <!-- Hamburger Icon -->
       <div class="navbar__toggle" id="mobile-menu">
-        <span class="bar"></span> 
+        <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
+      <!-- Menu Items -->
       <ul class="navbar__menu">
-        <li class="navbar__item">
-          <a href="index.html#Projects" class="navbar__links" id="Projects-page"><b>WORK</b></a>
-        </li>
-        <li class="navbar__item">
-          <a href="artwork.html" class="navbar__links"><b>PLAY</b></a>
-        </li>
-        <li class="navbar__item">
-          <a href="about.html" class="navbar__links" id="about-page"><b>ABOUT</b></a>
-        </li>
-        <li class="navbar__item navbar__last-child">
-          <a href="img/AlyssaTo_Resume.pdf" class="navbar__links" id="Resume" target="_blank"><b>RESUME</b></a>
-        </li>
+        <li class="navbar__item"><a href="index.html#Projects" class="navbar__links" id="Projects-page"><b>WORK</b></a></li>
+        <li class="navbar__item"><a href="artwork.html" class="navbar__links"><b>PLAY</b></a></li>
+        <li class="navbar__item"><a href="about.html" class="navbar__links" id="about-page"><b>ABOUT</b></a></li>
+        <li class="navbar__item navbar__last-child"><a href="img/AlyssaTo_Resume.pdf" class="navbar__links" id="Resume" target="_blank"><b>RESUME</b></a></li>
       </ul>
     </div>
-  </nav>
+  </div>
+
 
 <div class="main" id="about">
   <div class="main__container">
@@ -105,7 +97,6 @@
   </div>
   <p class="footer__bottom">Developed and Designed with ❤ by yours truly.<br> Ⓒ Alyssa To, 2024. All rights reserved.</p>
 </footer>
-
-    <script src="app.js"></script>
-  </body>
+<script src="app.js"></script>
+</body>
 </html>
