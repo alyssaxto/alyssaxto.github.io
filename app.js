@@ -1,27 +1,3 @@
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.navbar__menu');
-const navLogo = document.querySelector('#navbar__logo');
-
-
-
-// Display Mobile Menu
-const mobileMenu = () => {
-  menu.classList.toggle('is-active');
-  menuLinks.classList.toggle('active');
-};
-
-menu.addEventListener('click', mobileMenu);
-
-//  Close mobile Menu when clicking on a menu item
-const hideMobileMenu = () => {
-  const menuBars = document.querySelector('.is-active');
-  if (window.innerWidth <= 960 && menuBars) {
-    menu.classList.toggle('is-active');
-    menuLinks.classList.remove('active');
-  }
-};
-
-menuLinks.addEventListener('click', hideMobileMenu);
 
 
 document.querySelectorAll('.bullet-image img').forEach(item => {
@@ -96,7 +72,13 @@ document.addEventListener('scroll', function() {
   scrollText.style.transform = `translateX(${scrollPosition * scrollFactor}px)`;
 });
 
-// script.js
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('Custom cursor is applied!');
+// Navbar Mobile Menu Toggle (navbar.js)
+document.addEventListener('DOMContentLoaded', function () {
+  const mobileMenuButton = document.getElementById('mobile-menu');
+  const navbarMenu = document.querySelector('.navbar__menu');
+
+  mobileMenuButton.addEventListener('click', () => {
+    navbarMenu.classList.toggle('active');
+    mobileMenuButton.classList.toggle('active');
+  });
 });
