@@ -82,19 +82,3 @@ document.addEventListener('DOMContentLoaded', function () {
     mobileMenuButton.classList.toggle('active');
   });
 });
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector(".main__content").classList.add("show");
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector(".main__content").classList.add("show");
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector(".about__content").classList.add("show");
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector(".about__content").classList.add("show");
-});

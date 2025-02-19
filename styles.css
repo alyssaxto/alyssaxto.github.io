@@ -213,14 +213,7 @@ body {
   .main__content {
     color: #000;
     width: 100%;
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
-    transform: translateY(10px);
-}
-.main__content.show {
-    opacity: 1;
-    transform: translateY(0);
-}
+  }
 
 
   .main__content h2 {
@@ -674,9 +667,6 @@ h1 a {
 .about__content {
   color: #fff;
   width: 100%;
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
-  transform: translateY(10px);
 }
 
 .about__content h1 {
@@ -688,11 +678,6 @@ h1 a {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-}
-
-.about__content.show {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .about__content h2 {
